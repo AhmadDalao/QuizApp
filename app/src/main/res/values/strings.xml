@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">QuizApp</string>
+
+    <!--Question 1 Strings  -->
+    <string name="_1_when_did_google_started">1. when google was founded ?</string>
+    <string name="In_1994">In 1994</string>
+    <string name="In_1995">In 1995</string>
+    <string name="in_1996">In 1996</string>
+    <string name="check_answers">Check Answers</string>
+    <string name="score">Score</string>
+
+    <!--Question 2  Strings  -->
+
+
 </resources>
