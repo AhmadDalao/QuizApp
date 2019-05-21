@@ -161,20 +161,19 @@
                 android:id="@+id/question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. how do you say stupid in Japanese?"
+                android:text="@string/japanese"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:textStyle="italic" />
 
             <EditText
                 android:id="@+id/myEdit"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/myHint"/>
+                android:layout_marginTop="16dp"
+                android:hint="@string/myHint" />
 
         </LinearLayout>
-
 
 
         <LinearLayout
@@ -195,23 +194,23 @@
 
             <EditText
                 android:id="@+id/myEditTwo"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/yummm"/>
+                android:layout_marginTop="16dp"
+                android:hint="@string/yummm" />
 
         </LinearLayout>
 
 
         <TextView
             android:id="@+id/Score"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:text="@string/score"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            android:visibility="gone" />
 
         <Button
             android:layout_width="wrap_content"
