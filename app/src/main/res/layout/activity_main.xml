@@ -57,14 +57,160 @@
                 android:textSize="24sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/Question_two_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_when_did_google_launch_youtube"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkbox1_question2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="16dp"
+                android:text="@string/in_2006"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox2_question2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="16dp"
+                android:text="@string/in_2005"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox3_question2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="16dp"
+                android:text="@string/in_2004"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Question_three_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital_of_Syria"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question3_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="@string/Damascus"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/question3_radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="@string/Dammam"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/question3_radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="@string/Riyadh"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Question_four_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. how do you say stupid in Japanese?"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/myEdit"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/myHint"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/Question_five_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/androidVersion"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/myEditTwo"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/yummm"/>
+
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/Score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:textSize="32sp"
-            android:text="@string/score"/>
+            android:text="@string/score"
+            android:textSize="32sp" />
 
         <Button
             android:layout_width="wrap_content"

@@ -10,6 +10,24 @@
     <string name="score">Score</string>
 
     <!--Question 2  Strings  -->
+    <string name="_2_when_did_google_launch_youtube">2. when did google launch youtube ?</string>
+    <string name="in_2006">In 2006</string>
+    <string name="in_2004">In 2004</string>
+    <string name="in_2005">In 2005</string>
+
+    <!--Question  3 Strings  -->
+    <string name="capital_of_Syria">3. what is the capital  of Syria?"</string>
+    <string name="Damascus">Damascus</string>
+    <string name="Dammam">Dammam</string>
+    <string name="Riyadh">Riyadh</string>
+
+    <!--Question  4 Strings  -->
+    <string name="japanese">4. how do you say stupid in Japanese?</string>
+    <string name="myHint">Try to guess !!</string>
+
+    <!--Question  5 Strings  -->
+    <string name="androidVersion">5. what is the name of the android version 9.0 ?"</string>
+    <string name="yummm">So delicious !!</string>
 
 
 </resources>
