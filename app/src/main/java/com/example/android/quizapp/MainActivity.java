@@ -30,11 +30,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public int checkAnswerQuestionOne(boolean checkbox1, boolean checkbox2, boolean checkbox3) {
         int score = 0;
-        if (checkbox1) {
+
+        if (checkbox1 && checkbox2 && checkbox3) {
+            score = score + 0;
+        } else if (checkbox1 && checkbox2) {
             score = score + 1;
-        } else if (checkbox2 || checkbox3) {
+        } else if (checkbox2 && checkbox3) {
+            score = score + 0;
+        } else if (checkbox1 && checkbox3) {
             score = score + 0;
         }
+
         return score;
     }
 
@@ -50,11 +56,18 @@ public class MainActivity extends AppCompatActivity {
 
     public int checkAnswerQuestionTwo(boolean checkbox1, boolean checkbox2, boolean checkbox3) {
         int score = 0;
-        if (checkbox1 || checkbox3) {
+
+        if (checkbox1 && checkbox2 && checkbox3) {
             score = score + 0;
-        } else if (checkbox2) {
+        } else if (checkbox1 && checkbox2) {
+            score = score + 0;
+        } else if (checkbox2 && checkbox3) {
+            score = score + 0;
+        } else if (checkbox1 && checkbox3) {
             score = score + 1;
         }
+
+
         return score;
     }
 
@@ -142,8 +155,7 @@ public class MainActivity extends AppCompatActivity {
             score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("So bad!! read some books\n" + "you got " + TheScore + " out of 5"));
         } else
-            score.setVisibility(View.VISIBLE);
-        score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
+            score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
     }
 
 

@@ -24,7 +24,7 @@
                 android:id="@+id/question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_1_when_did_google_started"
+                android:text="@string/redWedding"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:textStyle="italic" />
@@ -35,7 +35,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
                 android:paddingLeft="16dp"
-                android:text="@string/In_1994"
+                android:text="@string/Talisa_Stark"
                 android:textSize="24sp" />
 
             <CheckBox
@@ -44,7 +44,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
                 android:paddingLeft="16dp"
-                android:text="@string/In_1995"
+                android:text="@string/Robb_Stark"
                 android:textSize="24sp" />
 
             <CheckBox
@@ -53,7 +53,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
                 android:paddingLeft="16dp"
-                android:text="@string/in_1996"
+                android:text="@string/Arya_Stark"
                 android:textSize="24sp" />
         </LinearLayout>
 
@@ -68,7 +68,7 @@
                 android:id="@+id/question_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_2_when_did_google_launch_youtube"
+                android:text="@string/dataTypes"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:textStyle="italic" />
@@ -79,7 +79,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
                 android:paddingLeft="16dp"
-                android:text="@string/in_2006"
+                android:text="@string/booleanType"
                 android:textSize="24sp" />
 
             <CheckBox
@@ -88,7 +88,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
                 android:paddingLeft="16dp"
-                android:text="@string/in_2005"
+                android:text="@string/StringType"
                 android:textSize="24sp" />
 
             <CheckBox
@@ -97,7 +97,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
                 android:paddingLeft="16dp"
-                android:text="@string/in_2004"
+                android:text="@string/Integer"
                 android:textSize="24sp" />
         </LinearLayout>
 

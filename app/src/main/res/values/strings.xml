@@ -1,19 +1,20 @@
 <resources>
     <string name="app_name">QuizApp</string>
-
-    <!--Question 1 Strings  -->
-    <string name="_1_when_did_google_started">1. when google was founded ?</string>
-    <string name="In_1994">In 1994</string>
-    <string name="In_1995">In 1995</string>
-    <string name="in_1996">In 1996</string>
     <string name="check_answers">Check Answers</string>
     <string name="score">Score</string>
 
+
+    <!--Question 1 Strings  -->
+    <string name="redWedding">1. who died at the red wedding in game of thorns ?</string>
+    <string name="Talisa_Stark">Talisa Stark</string>
+    <string name="Robb_Stark">Robb Stark</string>
+    <string name="Arya_Stark">Arya Stark</string>
+
     <!--Question 2  Strings  -->
-    <string name="_2_when_did_google_launch_youtube">2. when did google launch youtube ?</string>
-    <string name="in_2006">In 2006</string>
-    <string name="in_2004">In 2004</string>
-    <string name="in_2005">In 2005</string>
+    <string name="dataTypes">2. which of the following is a Primitive Data Type in Java ?</string>
+    <string name="booleanType">boolean</string>
+    <string name="StringType">String </string>
+    <string name="Integer">int </string>
 
     <!--Question  3 Strings  -->
     <string name="capital_of_Syria">3. what is the capital  of Syria?"</string>
