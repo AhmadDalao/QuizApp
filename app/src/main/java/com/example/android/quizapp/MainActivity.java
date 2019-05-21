@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             score = score + 0;
         } else if (checkbox1 && checkbox3) {
             score = score + 0;
-        }
+        } else score = score + 0;
 
         return score;
     }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             score = score + 0;
         } else if (checkbox1 && checkbox3) {
             score = score + 1;
-        }
+        } else score = score + 0;
 
 
         return score;
@@ -154,9 +154,12 @@ public class MainActivity extends AppCompatActivity {
         } else if (TheScore == 1) {
             score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("So bad!! read some books\n" + "you got " + TheScore + " out of 5"));
-        } else
+        } else if (TheScore == 0) {
+            score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
+        }
     }
+
 
 
     /*
