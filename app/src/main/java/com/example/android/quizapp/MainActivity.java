@@ -20,8 +20,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /*
-    check answer for question one
+    /**
+     * check answer for question one
+     *
+     * @param checkbox1 taking the checkbox boolean variable passed  from the user
+     * @param checkbox2 taking the checkbox boolean variable passed  from the user
+     * @param checkbox3 taking the checkbox boolean variable passed  from the user
+     * @return the score if the user got the right answer , usually story it in int variable to pass it to displayScore method
      */
     public int checkAnswerQuestionOne(boolean checkbox1, boolean checkbox2, boolean checkbox3) {
         int score = 0;
@@ -34,10 +39,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /*
-    check answer for question two
+    /**
+     * check answer for question two
+     *
+     * @param checkbox1 taking the checkbox boolean variable passed  from the user
+     * @param checkbox2 taking the checkbox boolean variable passed  from the user
+     * @param checkbox3 taking the checkbox boolean variable passed  from the user
+     * @return the score if the user got the right answer , usually story it in int variable to pass it to displayScore method
      */
-
 
     public int checkAnswerQuestionTwo(boolean checkbox1, boolean checkbox2, boolean checkbox3) {
         int score = 0;
@@ -49,8 +58,13 @@ public class MainActivity extends AppCompatActivity {
         return score;
     }
 
-    /*
-    check answer for question three
+    /**
+     * check answer for question three
+     *
+     * @param radio1 taking the radio boolean variable passed  from the user
+     * @param radio2 taking the radio boolean variable passed  from the user
+     * @param radio3 taking the radio boolean variable passed  from the user
+     * @return the score if the user got the right answer , usually story it in int variable to pass it to displayScore method
      */
 
     public int checkAnswerQuestionThree(boolean radio1, boolean radio2, boolean radio3) {
@@ -63,57 +77,85 @@ public class MainActivity extends AppCompatActivity {
         return score;
     }
 
-    /*
-    check answer for question four
+    /**
+     * check answer for question four ,
+     * it will compare the text from user with the correct text and increase the score
+     * if the user guessed the right answer.
+     *
+     * @param guess taking the answer from the user as a string variable passed to it from the user
+     * @return the score if the user got the right answer , usually story it in int variable to pass it to displayScore method
      */
 
     public int checkAnswerQuestionFour(String guess) {
         int score = 0;
-        if (guess.equals("baka")) {
+        if (guess.equals("baka") || guess.equals("Baka") || guess.equals("BAKA")) {
             score = score + 1;
         } else score = score + 0;
 
         return score;
     }
 
- /*
-    check answer for question five
+    /**
+     * check answer for question five ,
+     * it will compare the text from user with the correct text and increase the score
+     * if the user guessed the right answer.
+     *
+     * @param guess2 taking the answer from the user as a string variable passed to it from the user
+     * @return the score if the user got the right answer , usually story it in int variable to pass it to displayScore method
      */
 
     public int checkAnswerQuestionFive(String guess2) {
         int score = 0;
-        if (guess2.equals("pie") || guess2.equals("Pie")) {
+        if (guess2.equals("pie") || guess2.equals("Pie") || guess2.equals("PIE")) {
             score = score + 1;
         } else score = score + 0;
         return score;
     }
 
- /*
- this method will display the score if the question been answered correctly
-  */
+    /**
+     * this method will calculate and display the score when called
+     *
+     * @param number  is the variable passed from question one contains the score if the answer was correct it will contain 1
+     * @param number2 is the variable passed from question two contains the score if the answer was correct it will contain 1
+     * @param number3 is the variable passed from question three contains the score if the answer was correct it will contain 1
+     * @param number4 is the variable passed from question four contains the score if the answer was correct it will contain 1
+     * @param number5 is the variable passed from question five contains the score if the answer was correct it will contain 1
+     */
 
     public void displayScore(int number, int number2, int number3, int number4, int number5) {
         TextView score = findViewById(R.id.Score);
         int TheScore = number + number2 + number3 + number4 + number5;
 
         if (TheScore == 5) {
+            score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("Well Done !! \n" + "You got " + TheScore + " out of 5"));
         } else if (TheScore == 4) {
+            score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("Great job !!\n" + "You got " + TheScore + " out of 5"));
         } else if (TheScore == 3) {
+            score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("Good !!\n" + "You got " + TheScore + " out of 5"));
         } else if (TheScore == 2) {
+            score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("That's bad !! try again\n" + "You got " + TheScore + " out of 5"));
         } else if (TheScore == 1) {
+            score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("So bad!! read some books\n" + "you got " + TheScore + " out of 5"));
         } else
-            score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
+            score.setVisibility(View.VISIBLE);
+        score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
     }
 
 
     /*
-    this method should check for the answer
+    this method should takes action when the button check answers is clicked on
+
+    it handles taking objects from the widgets and store them in variables then pass them into methods
+
+    it is also responsible for calling the method displayScore() which will handle calculating the score and displaying it on screen
+
      */
+
     public void CheckCorrectAnswer(View view) {
 
          /*
@@ -177,7 +219,6 @@ public class MainActivity extends AppCompatActivity {
         String guessAnswer2 = editText2.getText().toString();
 
         int question5Score = checkAnswerQuestionFive(guessAnswer2);
-
 
         displayScore(question1Score, question2Score, question3Score, question4Score, question5Score);
 
