@@ -2,6 +2,7 @@ package com.example.android.quizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
 
     /**
@@ -141,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (TheScore == 5) {
             score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("Well Done !! \n" + "You got " + TheScore + " out of 5"));
+            score.setText(String.valueOf("Perfect !! \n" + "You got " + TheScore + " out of 5"));
         } else if (TheScore == 4) {
             score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("Great job !!\n" + "You got " + TheScore + " out of 5"));
@@ -237,6 +240,12 @@ public class MainActivity extends AppCompatActivity {
 
         displayScore(question1Score, question2Score, question3Score, question4Score, question5Score);
 
-
     }
+
+
+
+
+
+
+
 } // end of main activity
