@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
             score.setText(String.valueOf("That's bad !! try again\n" + "You got " + TheScore + " out of 5"));
         } else if (TheScore == 1) {
             score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("So bad!! read some books\n" + "you got " + TheScore + " out of 5"));
+            score.setText(String.valueOf("You kidding me !!\n" + "you got " + TheScore + " out of 5"));
         } else if (TheScore == 0) {
             score.setVisibility(View.VISIBLE);
             score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
