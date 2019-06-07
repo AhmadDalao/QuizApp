@@ -139,29 +139,39 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void displayScore(int number, int number2, int number3, int number4, int number5) {
-        TextView score = findViewById(R.id.Score);
-        int TheScore = number + number2 + number3 + number4 + number5;
+        TextView textView = findViewById(R.id.Score);
+        int score = number + number2 + number3 + number4 + number5;
 
-        if (TheScore == 5) {
-            score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("Perfect !! \n" + "You got " + TheScore + " out of 5"));
-        } else if (TheScore == 4) {
-            score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("Great job !!\n" + "You got " + TheScore + " out of 5"));
-        } else if (TheScore == 3) {
-            score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("Good !!\n" + "You got " + TheScore + " out of 5"));
-        } else if (TheScore == 2) {
-            score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("That's bad !! try again\n" + "You got " + TheScore + " out of 5"));
-        } else if (TheScore == 1) {
-            score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("You kidding me !!\n" + "you got " + TheScore + " out of 5"));
-        } else if (TheScore == 0) {
-            score.setVisibility(View.VISIBLE);
-            score.setText(String.valueOf("Are you even trying ??\n" + "you got " + TheScore + " out of 5"));
+        switch (score) {
+            case 5:
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("Perfect " + "\n" + "You got " + score + " out of 5");
+                break;
+            case 4:
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("Good job " + "\n" + "You got " + score + " out of 5");
+                break;
+            case 3:
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("Good " + "\n" + "You got " + score + " out of 5");
+                break;
+            case 2:
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("So BAD " + "\n" + "You got " + score + " out of 5");
+                break;
+            case 1:
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("You kidding me!! " + "\n" + "You got " + score + " out of 5");
+                break;
+            default:
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("are you even trying " + "\n" + "You got " + score + " out of 5");
+                break;
         }
-    }
+
+
+
+}
 
 
 
